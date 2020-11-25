@@ -1,0 +1,42 @@
+<template> 
+    <v-navigation-drawer app permanent absolute dark src="@/assets/background_menu.jpg">
+  <router-link to="/" exact>
+     <v-img src="@/assets/vue_display.jpg" alt="" width="100%" />     
+     </router-link>
+    
+
+   <v-list shaped>
+      <v-subheader>MENUS</v-subheader>
+      <v-list-item-group v-model="selectedMenu" mandatory color="primary">
+        <v-list-item class="tile" v-for="([icon, text, route], i) in menus" :key="i" link @click="onClickMenu(route)">
+          <v-list-item-icon>
+            <v-icon>{{ icon }}</v-icon>
+          </v-list-item-icon>
+
+          <v-list-item-content>
+            <v-list-item-title>{{ text }}</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+      </v-list-item-group>
+    </v-list>
+  </v-navigation-drawer>
+</template>
+
+<script>
+export default {
+  name: "Menu",
+  methods:{
+    onClickMenu(path){
+      this.$router.push(path)
+    }
+  },
+  data() {
+    return {
+      selectMenu: 0,
+      menus: [["mdi-apps-box", "Stock", "/stock"]],
+    };
+  },
+};
+</script>
+
+<style></style>
