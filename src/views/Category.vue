@@ -1,20 +1,32 @@
 <template>
   <div>
-    <basic-form></basic-form>
+    <basic-form :fields="fields"></basic-form>
   </div>
 </template>
 
 <script>
-import BasicForm from '../components/form/basic'
+import BasicForm from "../components/form/basic";
 export default {
-  name: 'Category',
+  name: "Category",
   components: {
-    BasicForm
-  }
-
-}
+    BasicForm,
+  },
+  data() {
+    return {
+      fields: [
+        {
+          name: "firstName",
+        },
+        {
+          name: "lastName",
+        },
+        {
+          name: "Email",
+        },
+      ],
+    };
+  },
+};
 </script>
 
-<style>
-
-</style>
+<style></style>
