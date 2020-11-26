@@ -1,8 +1,12 @@
 <template>
+  <!-- Sizes your content based upon application components -->
   <v-main>
-    <router-view></router-view>
-  </v-main>
-</template>
+    <!-- Provides the application the proper gutter -->
+    <v-container fluid>
+      <!-- If using vue-router -->
+      <router-view></router-view>
+    </v-container> </v-main
+></template>
 
 <script>
 export default {};

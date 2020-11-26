@@ -6,6 +6,7 @@ import Bom from '../views/Bom'
 import Product from '../views/Product'
 import WorkOrder from '../views/WorkOrder'
 import Category from '../views/Category'
+import Stock from '../views//Stock'
 
 Vue.use(VueRouter);
 
@@ -19,6 +20,11 @@ const routes = [
     path: "/login",
     name: "Login",
     component: Login,
+  },
+  {
+    path:"/stock",
+    name: "Stock",
+    component: Stock,
   },
   {
     path: "/bom",

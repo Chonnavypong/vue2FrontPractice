@@ -1,5 +1,5 @@
 <template>
-  <div class="product">
+  <v-container mt-5>
     <h1>Product Page</h1>
-  </div>
+  </v-container>
 </template>

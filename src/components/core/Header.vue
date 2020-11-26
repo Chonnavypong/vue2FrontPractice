@@ -1,23 +1,25 @@
 <template>
-  <v-card color="grey lighten-4" flat height="100%" tile>
-    <v-toolbar extended>
-      <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
+  <v-card color="grey lighten-1">
+    <v-app-bar app>
+      <v-toolbar flat>
+        <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
 
-      <v-toolbar-title
-        >Web Application V. {{ version }} {{ capitalize }}</v-toolbar-title
-      >
+        <v-toolbar-title
+          >Web Application V. {{ version }} {{ capitalize }}</v-toolbar-title
+        >
 
-      <v-spacer></v-spacer>
+        <v-spacer></v-spacer>
 
-      <v-btn icon>
-        <v-icon>mdi-magnify</v-icon>
-      </v-btn>
+        <v-btn icon>
+          <v-icon>mdi-magnify</v-icon>
+        </v-btn>
 
-      <v-btn icon>
-        <v-icon>mdi-dots-vertical</v-icon>
-      </v-btn>
-    </v-toolbar>
-    <v-navigation-drawer v-model="drawer" absolute>
+        <v-btn icon>
+          <v-icon>mdi-dots-vertical</v-icon>
+        </v-btn>
+      </v-toolbar>
+    </v-app-bar>
+    <v-navigation-drawer v-model="drawer" expand-on-hover app>
       <v-list-item>
         <v-list-item-avatar> </v-list-item-avatar>
 
