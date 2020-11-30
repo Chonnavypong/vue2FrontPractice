@@ -1,12 +1,13 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
-import Login from '../views/Login'
-import Bom from '../views/Bom'
-import Product from '../views/Product'
-import WorkOrder from '../views/WorkOrder'
-import Category from '../views/Category'
-import Stock from '../views//Stock'
+import Login from "../views/Login";
+import Bom from "../views/Bom";
+import Product from "../views/Product";
+import WorkOrder from "../views/WorkOrder";
+import Category from "../views/Category";
+import Stock from "../views/Stock";
+import Vfor from "../views/testVfor";
 
 Vue.use(VueRouter);
 
@@ -22,7 +23,7 @@ const routes = [
     component: Login,
   },
   {
-    path:"/stock",
+    path: "/stock",
     name: "Stock",
     component: Stock,
   },
@@ -45,6 +46,11 @@ const routes = [
     path: "/work order",
     name: "WorkOrder",
     component: WorkOrder,
+  },
+  {
+    path: "/vfor",
+    name: "VFor",
+    component: Vfor,
   },
   {
     path: "/about",

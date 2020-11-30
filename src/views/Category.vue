@@ -1,27 +1,30 @@
 <template>
-  <div>
-    <basic-form :fields="fields"></basic-form>
-  </div>
+  <basic-form :fields="inp"> </basic-form>
 </template>
 
 <script>
 import BasicForm from "../components/form/basic";
 export default {
   name: "Category",
-  components: {
-    BasicForm,
-  },
+  components: { BasicForm },
   data() {
     return {
-      fields: [
+      inp: [
         {
           name: "firstName",
+          lable: "First Name",
         },
         {
           name: "lastName",
+          lable: "Last name",
         },
         {
-          name: "Email",
+          name: "email",
+          lable: "Email",
+        },
+        {
+          name: "add",
+          lable: "Address",
         },
       ],
     };

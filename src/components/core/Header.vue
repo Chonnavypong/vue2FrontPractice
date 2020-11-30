@@ -62,6 +62,7 @@ export default {
         ["mdi-apps-box", "Stock", "/stock"],
         ["mdi-apps-box", "Product", "/product"],
         ["mdi-apps-box", "Category", "/category"],
+        ["mdi-apps-box", "VFor", "/vFor"],
       ],
     };
   },
